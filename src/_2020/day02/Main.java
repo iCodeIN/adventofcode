@@ -12,7 +12,7 @@ public class Main {
     private static final String FILE_LOCATION = "src/_2020/day02/input.txt";
 
     public static void main(String[] args) throws IOException {
-        List<Password> mappedPasswords = FileReader.getLinesFromFile(Paths.get(FILE_LOCATION)).stream()
+        List<Password> mappedPasswords = FileReader.getFileLines(Paths.get(FILE_LOCATION)).stream()
                 .map(Main::getMappedInput)
                 .collect(Collectors.toList());
 

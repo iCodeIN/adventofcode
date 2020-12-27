@@ -12,7 +12,7 @@ public class ReportRepair {
     private static final String FILE_LOCATION = "src/_2020/day01/input.txt";
 
     public static void main(String[] args) throws IOException {
-        List<Integer> numbers = FileReader.getLinesFromFile(Paths.get(FILE_LOCATION)).stream()
+        List<Integer> numbers = FileReader.getFileLines(Paths.get(FILE_LOCATION)).stream()
                 .mapToInt(Integer::valueOf)
                 .sorted()
                 .boxed()
